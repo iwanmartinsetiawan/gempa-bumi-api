@@ -7,7 +7,10 @@ const node_env = process.env.NODE_ENV || 'dev'
 
 app.get('/', (req, res) => {
   scrapper.scrapper().then(result => {
-    res.send(result);
+    res.send({
+      repo: 'https://github.com/yogiwisesa/gempa-bumi-api',
+      gempa: result
+    });
   });
 });
 
