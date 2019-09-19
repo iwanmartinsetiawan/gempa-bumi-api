@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
   scrapper.scrapper().then(result => {
     res.send({
       repo: 'https://github.com/yogiwisesa/gempa-bumi-api',
+      source: 'http://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg',
       gempa: result
     });
   });
