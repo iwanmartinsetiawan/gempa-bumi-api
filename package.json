@@ -1,0 +1,17 @@
+{
+  "name": "gempa-api",
+  "version": "1.0.0",
+  "description": "Gempa bumi API",
+  "main": "index.js",
+  "repository": "https://github.com/yogiwisesa/gempa-bumi-api",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "Open-Api"
+  ],
+  "author": "Yogi Wisesa",
+  "license": "ISC"
+}
