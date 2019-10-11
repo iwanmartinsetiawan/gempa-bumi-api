@@ -2,7 +2,7 @@
 const cheerio = require('cheerio');
 const rp = require('request-promise');
 
-const url = `http://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg`;
+const url = `https://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg`;
 
 exports.scrapper = function() {
   return rp(url).then((html) => {
